@@ -1,0 +1,217 @@
+body {
+    background-color: #383838;
+    margin: 0;
+}
+#main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.containerOne {
+    min-height: 100vh;
+    flex: 1;
+    background-image: url(https://images.unsplash.com/photo-1593504049359-74330189a345?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+    background-position: center;
+    background-size: cover;
+}
+.containerTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 2;
+    min-height: 100vh;
+    background-color: #383838;
+}
+.containerThree {
+    min-height: 100vh;
+    flex: 1;
+    background-image: url(https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YnVyZ2Vyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+    background-position: center;
+    background-size: cover;
+}
+h1 {
+    color: #066163;
+    font-size: 48px;
+    margin-bottom: 0;
+    font-family: 'Barlow', sans-serif;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.parInForm {
+    color: #CDBE78;
+    font-size: 25px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+}
+#bill, #people {
+    background-color: #383838;
+    color: #CDBE78;
+    padding: 10px;
+    font-size: 25px;
+    border: #066163 1px solid;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%;
+    font-family: 'Barlow', sans-serif;
+}
+#bill {
+    width: 25%;
+}
+#people {
+    width: 28%;
+}
+#btnAddTip, #btnCalculate, #tip, select {
+    color: #383838;
+    width: 70%;
+    margin-left: 100px;
+    border: #066163 1px solid;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%;
+    background-color: #CDBE78;
+    font-family: 'Barlow', sans-serif;
+}
+#btnAddTip, #btnCalculate {
+    font-size: 25px;
+}
+#tip {
+    font-size: 15px;
+    display: none;
+}
+#totalAmoutToPay {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+#billPerPerson, #tipPerPerson, #totalAmount {
+    color: #556052;
+    font-size: 20px;
+    padding: 3px;
+    width: 25%;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%;
+    text-align: center;
+    border: #066163 1px solid;
+    margin-top: 20px;
+}
+.parSecond {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-family: 'Barlow', sans-serif;
+    color: #CDBE78;
+}
+#firstSpan {
+    margin-left: 200px;
+    color: #F2F2F2;
+    font-size: 30px;
+    font-style: italic;
+}
+#secondSpan {
+    margin-left: 220px;
+}
+.thank {
+    margin-top: 30px;
+}
+#btnCalculate {
+    margin-top: 20px;
+}
+.dollar, #billAndTip, #dividedTip, #dividedBill {
+    color: #F2F2F2;
+    font-size: 22px;
+    font-style: italic;
+    font-family: 'Barlow', sans-serif;
+}
+@media all and (max-width: 1000px) {
+    .containerOne {
+        flex: 1;
+    }
+    .containerTwo {
+        flex: 4;
+    }
+    .containerThree {
+        flex: 1;
+    }
+}
+@media all and (max-width: 800px) {
+    .containerTwo {
+        flex: 3;
+    }
+    .containerCenter {
+        height: 60%;
+    }
+    #firstSpan {
+        margin-left: 150px;
+    }
+    #secondSpan {
+        margin-left: 170px;
+    }
+    #btnAddTip, #btnCalculate, #tip {
+        margin-left: 70px;
+    }
+}
+@media all and (max-width: 800px) {
+    .containerTwo {
+        flex: 5;
+    }
+}
+@media all and (max-width: 600px) {
+    .containerTwo {
+        flex: 3;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .parInForm {
+        font-size: 21px;
+    }
+    #firstSpan {
+        margin-left: 20px;
+    }
+    #secondSpan {
+        margin-left: 40px;
+    }
+    #btnAddTip, #btnCalculate, #tip {
+        margin: auto;
+        width: 80%;
+        padding: 7px;
+    }
+    #btnCalculate {
+        margin-top: 20px;
+    }
+    #totalAmoutToPay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #billPerPerson, #tipPerPerson, #totalAmount {
+        width: 70%;
+    }
+    #bill {
+        width: 70%;
+    }
+    #people {
+        width: 76%;
+    }
+}
+@media all and (max-width: 500px) {
+    h1 {
+        font-size: 22px;
+    }
+    .parInForm {
+        font-size: 15px;
+    }
+    #bill, #people {
+        padding: 5px;
+        font-size: 15px;
+    }
+    #firstSpan {
+        font-size: 20px;
+    }
+    #btnAddTip, #btnCalculate, #tip, .parSecond {
+        font-size: 15px;
+    }
+}

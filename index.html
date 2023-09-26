@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split the bill</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+
+    <div class="containerOne"></div>
+
+    <div class="containerTwo">
+        <h1>Let's split the bill!</h1>
+        <form>
+            <p class="parInForm">enter amount of your bill</p>
+            <span id="firstSpan">$
+                <input type="text" id="bill">
+            </span> 
+            <p class="parInForm">enter number of your party</p>
+            <span id="secondSpan">
+                <input type="text" name="How many people" id="people">
+            </span>
+            <p class="parInForm thank">appreciate your server 💙</p>
+            <button id="btnAddTip">add a tip</button>
+            <select id="tip">
+                <option disabled>Select an option</option>
+                <option value="0.25">25%</option>
+                <option value="0.20" selected>20%</option>
+                <option value="0.18">18%</option>
+                <option value="0.12">12%</option>
+                <option value="0.0" selected>no tip</option>
+            </select>
+            <button id="btnCalculate">calculate</button>
+        </form>
+
+        
+        <div id="totalAmoutToPay">
+
+            <div id="billPerPerson">
+                <p class="parSecond">bill</p>
+                <p class="parSecond"><span class="dollar">$</span>
+                    <span id="dividedBill"></span>
+                </p>
+                <span class="parSecond" >per customer</span>
+            </div>
+
+            <div id="tipPerPerson">
+                <p class="parSecond">tip</p>
+                <p class="parSecond"><span class="dollar">$</span>
+                    <span id="dividedTip"></span>
+                </p>
+                <span class="parSecond">per customer</span>
+            </div>
+
+            <div id="totalAmount">
+                <p class="parSecond">total amount</p>
+                <p class="parSecond"><span class="dollar">$</span>
+                    <span id="billAndTip"></span>
+                </p>
+                <span class="parSecond">per customer</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="containerThree"></div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js"></script>
+</body>
+</html>
